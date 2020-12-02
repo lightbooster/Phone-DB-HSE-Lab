@@ -1,4 +1,4 @@
-# Phone-DB-HSE-Lab-
+# Phone-DB-HSE-Lab
 phonebook app made by Sapozhnikov Andrey
 
 <br />Code overview (video): 
