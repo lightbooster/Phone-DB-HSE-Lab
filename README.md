@@ -9,6 +9,7 @@ phonebook app made by Sapozhnikov Andrey
 <br />@sapozhnikovandrey - Telegram
 <br />amsapozhnikov@edu.hse.ru / sand.developer@gmail.com - Mail
 ### Stack: Python, SQLite, CLI, python.Keyboard
+<img src=BD%20Structure.jpg widht=100>
 ## Особенности:
 * Пользователю доступен графиеский интерфейс (в терминале) и возможность управления им с помощью горячих клавиш
 * Реализована реляционная БД на основе SQLite. БД содержит 2 таблицы Persons и Phones, связанные отношением one-to-many т.е. один человек может иметь множество телефонов. Весь поиск и фильтрация выполнены средством SQL запросов (за исключением подсчета возраста).
