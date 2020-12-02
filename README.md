@@ -1,7 +1,10 @@
 # Phone-DB-HSE-Lab-
 phonebook app made by Sapozhnikov Andrey
-Code overview: https://www.loom.com/share/619d365e8d3b4d76b826947aa9479ba5?sharedAppSource=personal_library
-Interface overview: https://www.loom.com/share/0b973c8c4a434dc289b328db604bfdce?sharedAppSource=personal_library
+
+Code overview: 
+https://www.loom.com/share/619d365e8d3b4d76b826947aa9479ba5?sharedAppSource=personal_library
+Interface overview:
+https://www.loom.com/share/0b973c8c4a434dc289b328db604bfdce?sharedAppSource=personal_library
 Contacts: 
 @sapozhnikovandrey - Telegram
 amsapozhnikov@edu.hse.ru / sand.developer@gmail.com - Mail
