@@ -710,7 +710,7 @@ class ContactsDBInterface(ContactsDB):
         Hot key function for person delete
         :return: None
         """
-        if self.__mode == 0:
+        if self.__mode == 0 and len(self.__last_table) > 0:
             person_id = self.__last_table[self.__selected_hor][0]
             self._delete_person(person_id)
             self.__reload_main_window()
@@ -722,7 +722,7 @@ class ContactsDBInterface(ContactsDB):
         Hot key function for phone delete
         :return: None
         """
-        if self.__mode == 0:
+        if self.__mode == 0 and len(self.__last_table) > 0:
             phone_id = self.__last_table[self.__selected_hor][5]
             self._delete_phone(phone_id)
             self.__reload_main_window()
@@ -751,14 +751,15 @@ class ContactsDBInterface(ContactsDB):
         :param edit_mode: which edit screen want to enable
         :return: None
         """
-        if self.__mode or (self.__mode != 1 and len(self.__last_table) == 0):
+        if self.__mode or (self.__mode != 1 and edit_mode != 1 and len(self.__last_table) == 0):
             return
 
         self.__mode = 1
         self.__edit_mode = edit_mode
         header_name = list(self.__format_headers.keys())[edit_mode]
-        selected_row = list(self.__last_table[self.__selected_hor])
-        print("Selected row", self.__selected_hor, selected_row)
+        selected_row = list()
+        if len(self.__last_table) > 0:
+            selected_row = list(self.__last_table[self.__selected_hor] )
         before_update_values = list()
         if edit_mode == 3:
             before_update_values = selected_row[1:5]
